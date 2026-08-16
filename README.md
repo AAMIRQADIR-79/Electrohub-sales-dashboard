@@ -32,7 +32,7 @@ The project moves from raw Excel data to a fully interactive, decision-ready das
 
 All dimension tables connect to the Fact table via **1-to-many relationships** with single-direction cross-filtering — reducing data redundancy and keeping the model fast and clean.
 
-📷 `screenshots/data_model.png`
+📷 `Screenshots/data_model.png`
 
 ---
 
@@ -56,27 +56,27 @@ All dimension tables connect to the Fact table via **1-to-many relationships** w
 ### Top & Bottom 5 Performers
 Ranked views across Sales, Quantity, and Profit — flags best and worst-performing products instantly.
 
-📷 `screenshots/top_bottom_5.png`
+📷 `Screenshots/top_bottom_5.png`
 
 ### Sales Trend Over Time
 Tracks Net Sales year-over-year, surfacing growth periods and a notable shift in the most recent year.
 
-📷 `screenshots/sales_trend.png`
+📷 `Screenshots/sales_trend.png`
 
 ### Units Sold vs. Price Per Unit
 Reveals price sensitivity: lower-priced products drive significantly higher volumes, while premium-priced items sell in smaller, steadier volumes.
 
-📷 `screenshots/scatter_price_vs_units.png`
+📷 `Screenshots/scatter_price_vs_units.png`
 
 ### Average Discount by Promotion Category
 Weekend Flash Sale and Clearance Sale carry the deepest average discounts; festival campaigns like Diwali lean less on price cuts.
 
-📷 `screenshots/discount_by_category.png`
+📷 `Screenshots/discount_by_category.png`
 
 ### Sales by City
 Geographic view highlighting Nagpur, Pune, and the Delhi-NCR cluster as top-performing regions.
 
-📷 `screenshots/sales_by_city.png`
+📷 `Screenshots/sales_by_city.png`
 
 ### Dynamic Two-Period Comparison
 Users pick any two custom date ranges and instantly compare Total Sales, Profit, and Quantity side-by-side. Implemented using **Edit Interactions** for a lightweight, efficient result — after first prototyping the same feature with dual date tables and `USERELATIONSHIP` DAX measures, then simplifying once the added model complexity wasn't justified for this use case.
@@ -90,12 +90,12 @@ CALCULATE(
 )
 ```
 
-📷 `screenshots/period_comparison.png`
+📷 `Screenshots/period_comparison.png`
 
 ### Order-Level Detail Table
 Fully filterable drill-down (Date, Customer, Product, Promotion) exposing every field per order — supports ad-hoc questions beyond the summary dashboard.
 
-📷 `screenshots/order_detail_table.png`
+📷 `Screenshots/order_detail_table.png`
 
 ### Dynamic Cross-Slicer Filtering
 Measure-based slicer filtering ensures selecting a value in one slicer narrows others to only relevant, non-empty combinations — preventing dead-end filter selections.
